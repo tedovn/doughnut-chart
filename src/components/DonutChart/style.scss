@@ -1,0 +1,35 @@
+svg {
+  overflow: visible;
+  transform-origin: center;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+
+  #use-indicator-0 {
+    &:hover {
+      stroke-width: 7;
+      stroke: rgba(0, 0, 0, 0.355);
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+  }
+
+  .handlers {
+    g {
+      transform-origin: center;
+
+      &.handler-item {
+        cursor: move;
+
+        line {
+          &:hover {
+            stroke-width: 10;
+            stroke: rgba(0, 0, 0, 0.355);
+            stroke-linejoin: round;
+            stroke-linecap: round;
+          }
+        }
+      }
+    }
+  }
+}
